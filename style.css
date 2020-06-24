@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f8f4eb;
+	font-family: Arial, Helvetica, sans-serif;
+	/*overflow: hidden;*/
+}
+/*-------------------------------header--------------------------*/
+#header-bar {
+	margin-top: -1050px;
+	position:absolute;
+	display: flex;
+	flex-direction: column;
+	height: 980px;
+	width: 100%;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 3px 3px 8px 5px #888888;
+}
+#main-picture {
+	background-image: url("food.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #888888;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 980px;
+	cursor: pointer;
+}
+.header-bar-active {
+	animation-name: header-animation;
+	animation-duration: 2s;
+}
+.header-bar-active1 {
+	animation-name: header-animation1;
+	animation-duration: 2s;
+}
+.header-bar-active2 {
+	animation-name: title-animation;
+	animation-duration: 2s;
+}
+#image {
+	height: 96%;
+	width: 100%;
+}
+
+#title {
+	text-align: center;
+	font-size: 100pt;
+	color: black;
+	width: 100%;
+}
+
+#exit {
+	width: auto;
+	height: 100%;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#menu {
+	width: auto;
+	height: 100%;
+	padding-right: 20px;
+	padding-top: 20px;	
+}
+
+@keyframes header-animation {
+	0% {
+		height: 980px; 
+	}
+	100% {
+		height: 100px;
+	}
+}
+
+@keyframes header-animation1 {
+	0% {
+		height: 980px; 
+		margin-top: -1050px;
+	}
+	100% {
+		height: 100px;
+		margin-top: -150px;
+	}
+}
+
+@keyframes title-animation {
+  0% {font-size: 100pt;}
+  100% {font-size: 50pt;}
+}
+
+/*-------------------------------category--------------------------*/
+@keyframes body-animation {
+  0% {margin-top: 1050px;}
+  100% {margin-top: 150px;}
+}
+
+.category-active {
+	animation-name: body-animation;
+	animation-duration: 2s;
+}
+
+#category {
+	margin-top: 1050px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 800px;
+	width: 100%;
+}
+
+#category-header {
+	width: 60%;
+	margin-bottom: 20px;
+	/*background-color: #b8b8b8;*/
+}
+
+#category-header p {
+	font-size: 30pt;
+	color: black;
+	margin-left: 3%;
+}
+
+#card-holder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 100%;
+	width: 60%;
+}
+
+.category-card {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border: 2px solid #f8f4eb;
+	background-color: #f8f4eb;
+	color: white;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s ease;
+	box-shadow: inset 10px 10px 200px -17px rgba(184,184,184,1);;
+}
+
+.category-card p {
+	z-index: 1;
+	font-size: 30pt;
+}
+
+.category-card:hover {
+	border-radius: 0px;
+	transition: 0.5s ease;
+	color: black;
+	box-shadow: inset 0px 0px 0px 0px;
+}
+
+#chinese {
+	background-image: url("chinese.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#japanese {
+	background-image: url("japanese.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#italian {
+	background-image: url("italian.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mexican {
+	background-image: url("mexican.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#korean {
+	background-image: url("korean.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#drinks {
+	background-image: url("drinks.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pizzas {
+	background-image: url("pizzas.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#burgers {
+	background-image: url("burgers.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*------------------------------------- shops -------------------------------------------*/
+#restaurants {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+
+#shop-holder {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 60%;
+}
+
+.shop-card {
+	margin-bottom: 50px;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	border: 2px solid #f8f4eb;
+	background-color: #f8f4eb;
+	color: white;
+	border-radius: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s ease;
+	box-shadow: inset 10px 10px 200px -17px rgba(184,184,184,1);;
+}
+
+.shop-card p {
+	z-index: 1;
+	font-size: 30pt;
+}
+
+.shop-card:hover {
+	border-radius: 0px;
+	transition: 0.5s ease;
+	color: black;
+	box-shadow: inset 0px 0px 0px 0px;
+}
+
+.shop-info {
+	height: 100px;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 0 0 60px 60px;
+}
